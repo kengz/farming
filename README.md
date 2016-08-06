@@ -68,33 +68,83 @@ Note that the limits discussed above would also be radically reduced. Coupled wi
 
 ## Design
 
-language: Python for data science and most backend; whatever Arduino or the robotics system need; Nodejs for server and interface?
+**Language:** Python for data science and most backend; whatever Arduino or the robotics system need; Nodejs for server and interface?
 
-installation n setup
-run
-iteration n improvement
+We divide the project into 3 main components.
 
-data science part: 
-define data, information, collect, analyze, act on it
-algorithms that run on the data - the analyses, actions(optimization), feedback
-list inputs
-function bodies
-outputs
+### Data Science component
 
-robotics part: 
-list sensors and tools needed: for measurement first, no action yet for phase 1
+Starting with data, we need to define the observable variables and their possible relevance to the farming function. Then, we can collect, analyze, act on, and feedback from the information. 
 
-good ol' farming part: 
-list resources needed
+The data will also determine what algorithms and optimizations we can perform. Only then can we start to define the farming function that optimizes. inputs to outputs.
 
 
-current phase
+#### v1
 
-phase 1: 
-data definition and collection
+**Candidate data**
 
-roadmap
+|variable|details|
+|:--|:--|
+|land dimensions|Spatial measurements including area, depth, spacing|
+|soil dimensions|Measurements of soil type v.s. seed type, soil depth, weight, compactness|
+|water usage|how much water v.s. soil, seed type, frequency, weight, target area size of application|
+|plan growth|measurement of the output, i.e. how well is the farming function|
+|yield weight|measurement of quality of output|
 
-changelog & history
+version 1 is simple, that is to define, collect and analyze data before any actions. The farming function for version 1 is defined as taking the variables, figuring out the manipulation of the input variables, and how that affects outputs. It is also data-building before we can go far.
+
+
+### Robotics component
+
+Robotics bridges the real world environment with the data science component. It encompasses the sensors for data collection, and robotic arms for actions (later versions).
+
+#### v1
+
+For the data above we need the corresponding sensors:
+
+*needs to be expanded
+
+|sensor|details|
+|:--|:--|
+|water sensor|visual inspection of the status of crop|
+|camera|visual inspection of the status of crop|
+
+
+### Farming component
+
+This is the good ol' farming part, that involves the resources listed above.
+
+#### v1
+
+We stand with common crops:
+
+|crop|details|
+|:--|:--|
+|potatoes|yums|
+|tomatoes|yums|
+
+
+
+## Installation and Setup
+
+*What to get, how to setup from scratch.*
+
+## Run
+
+*The scientific procedure, the farming function. The strategy for iterations and improvements.*
+
 
 ## Roadmap
+
+### v1.0 (current)
+
+- data definition, collection, analyses
+- set up simple robotics sensors
+- set up simple farming component
+- no actions yet
+
+### v1.1
+
+- select useful data variables, repeat v1.0 till data is good
+- expand data set
+- no actions yet
