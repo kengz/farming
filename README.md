@@ -1,4 +1,4 @@
-# Farming [![CircleCI](https://circleci.com/gh/kengz/farming.svg?style=shield)](https://circleci.com/gh/kengz/farming)
+# Farming [![CircleCI](https://circleci.com/gh/kengz/farming.svg?style=shield)](https://circleci.com/gh/kengz/farming) [![Code Climate](https://codeclimate.com/github/kengz/farming/badges/gpa.svg)](https://codeclimate.com/github/kengz/farming)
 Two engineers decide to become farmers
 
 ## Motivation
