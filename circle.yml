@@ -12,8 +12,8 @@ dependencies:
     - pip install -U pytest-cov
   override:
     - npm install --dev
-    - python setup.py test
 
 test:
   override:
     - npm test
+    - python setup.py test
