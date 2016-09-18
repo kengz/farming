@@ -1,4 +1,4 @@
-# Farming
+# Farming [![CircleCI](https://circleci.com/gh/kengz/farming.svg?style=shield)](https://circleci.com/gh/kengz/farming)
 Two engineers decide to become farmers
 
 ## Motivation
