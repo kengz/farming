@@ -3,6 +3,6 @@ import unittest
 
 class SampleTest(unittest.TestCase):
 
-  def test_sample(self):
+  def testSample(self):
     foo = 1
     self.assertEqual(foo, 1)

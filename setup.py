@@ -30,6 +30,6 @@ setup(name='farming',
       version='1.0.0',
       description='Two engineers decide to become farmers',
       packages=find_packages(),
-      test_suite='tests',
+      test_suite='test',
       cmdclass={'test': PyTest}
       )
