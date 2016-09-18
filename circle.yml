@@ -16,7 +16,7 @@ dependencies:
     - pip install -U pandas joblib
     - pip install -U pytest-cov
   override:
-    - npm install --dev
+    - npm install --only=dev
 
 test:
   override:
