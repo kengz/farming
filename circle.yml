@@ -1,0 +1,24 @@
+machine:
+  python:
+    version: 3.5.1
+  node:
+    version: 6
+  environment:
+    CODECLIMATE_REPO_TOKEN: e65c7f07773e68830504a9920e08912f2865c7d6ce400c956bbfb4e9451690f3
+
+dependencies:
+  pre:
+    - sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test && sudo apt-get update
+    - sudo apt-get install -y gcc-4.9 g++-4.9 libhdf5-dev
+    - pip install -U h5py
+    - pip install -U numpy
+    - pip install -U scipy
+    - pip install -U pandas joblib
+    - pip install -U pytest-cov
+  override:
+    - npm install --dev
+
+test:
+  override:
+    - npm test
+    - python setup.py test
