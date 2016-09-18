@@ -1,6 +1,8 @@
 // chai assertation library
 const chai = require('chai'),
   expect = chai.expect
+const path = require('path')
+var sample = require(path.join('..', 'lib', 'sample'))
 
 
 //==============================================
