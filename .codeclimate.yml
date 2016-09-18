@@ -7,8 +7,8 @@ engines:
         python:
   fixme:
     enabled: true
-  nodesecurity:
-    enabled: true
+  # nodesecurity:
+  #   enabled: true
   eslint:
     enabled: true
   csslint:
