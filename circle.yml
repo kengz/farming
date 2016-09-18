@@ -8,7 +8,10 @@ dependencies:
   pre:
     - sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test && sudo apt-get update
     - sudo apt-get install -y gcc-4.9 g++-4.9 libhdf5-dev
-    - pip install -U h5py numpy scipy pandas joblib
+    - pip install -U h5py
+    - pip install -U numpy
+    - pip install -U scipy
+    - pip install -U pandas joblib
     - pip install -U pytest-cov
   override:
     - npm install --dev
