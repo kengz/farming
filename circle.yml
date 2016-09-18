@@ -1,0 +1,15 @@
+machine:
+  python:
+    version: 3.5.1
+  node:
+    version: 6
+
+dependencies:
+  pre:
+    - pip install -U h5py numpy scipy pandas joblib
+  override:
+    - npm install --dev
+
+test:
+  override:
+    - npm test
